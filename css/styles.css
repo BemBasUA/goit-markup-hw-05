@@ -381,6 +381,9 @@ body {
   color: var(--accent-color);
 }
 /* Portfolio */
+.examples-list img {
+  display: block;
+}
 .portfolio.section {
   background-color: var(--primary-white-color);
 }
@@ -444,6 +447,25 @@ body {
   font-size: 16px;
   line-height: 1.87;
   color: var(--secondary-text-color);
+}
+.examples-list .thumb {
+  position: relative;
+  overflow: hidden;
+}
+.examples-list .examples-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  padding: 63px 24px;
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--primary-white-color);
+  background-color: rgba(33, 150, 243, 0.9);
+  transition: transform 250ms var(--primary-transition);
+}
+.examples-list .item:hover .examples-overlay {
+  transform: translateY(0);
 }
 /* Modal */
 .backdrop {
