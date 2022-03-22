@@ -483,7 +483,7 @@ body {
   pointer-events: none;
 }
 .backdrop.is-hidden .modal {
-  transform: scale(0.9) translate(-50%, -50%);
+  transform: scale(0.5) translate(-100%, -100%);
 }
 .modal {
   position: absolute;
@@ -496,7 +496,7 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transition: tranform 250ms var(--primary-transition);
+  transition: transform 250ms var(--primary-transition);
 }
 .modal-close-btn {
   position: absolute;
